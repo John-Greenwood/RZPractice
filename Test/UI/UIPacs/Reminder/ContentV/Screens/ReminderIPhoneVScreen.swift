@@ -99,6 +99,7 @@ class ReminderIPhoneVScreen: RZUIPacView {
             .width(dayButtonSize).height(dayButtonSize)
             .cornerRadius(dayButtonSize / 2*)
             .text(model.$text)
+            .font(.title3)
             .template(model.$isSelected.switcher([
                 true: .custom { [weak self] button in
                     guard let self = self else { return }
@@ -142,6 +143,7 @@ class ReminderIPhoneVScreen: RZUIPacView {
             .color(.white, .content)
             .text(router.planbuttonText)
             .cornerRadius(planButtonHeight / 2*)
+            .font(.title3)
             .addAction(router.planButtonAction)
     }
     

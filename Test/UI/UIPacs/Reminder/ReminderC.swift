@@ -10,6 +10,7 @@ import RelizKit
 class ReminderC: RZUIPacController {
     
     var iPhoneViewType: RZUIPacAnyViewProtocol.Type? {ReminderIPhoneVScreen.self}
+    var iPadViewType: RZUIPacAnyViewProtocol.Type? {ReminderIPhoneVScreen.self}
     
     var router = ReminderR()
     
